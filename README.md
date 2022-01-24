@@ -26,13 +26,13 @@ A computer with a working and up to date web browser.
 - Run npm install
 
 ```
-$ git clone https://github.com/saretoduncan/pizzaShop_nodejs_api.git
-$ cd pizzaShop_nodejs_api
+$ git clone https://github.com/saretoduncan/user_event_api.git
+$ cd user_event_api
 $ npm install
 
 ```
 ### Live Link & Documentation
-- https://pizzastorebackendapi.herokuapp.com/api-docs
+- https://usereventapi.herokuapp.com/api-docs/
 
 ## Author
 
