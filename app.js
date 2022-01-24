@@ -4,6 +4,8 @@ import mongoose from "mongoose";
 
 import userAuth_routes from "./src/routes/userRoutes.js";
 import events_routes from "./src/routes/eventsRoutes.js";
+import swaggerUiExpress from "swagger-ui-express";
+import {apiDocumentation} from "./src/docs/apidocs.js"
 
 const app = express();
 //config
@@ -17,6 +19,7 @@ mongoose.connect(process.env.MONGODB_URI, () => {
 });
 //middlewares
 app.use(express.json());
+app.use("/api-docs",swaggerUiExpress.serve, swaggerUiExpress.setup(apiDocumentation))
 app.use("/api/user", userAuth_routes);
 app.use("/api/event", events_routes);
 
