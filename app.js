@@ -19,7 +19,7 @@ mongoose.connect(process.env.MONGODB_URI, () => {
 app.use(express.json());
 app.use("/api/user", userAuth_routes);
 app.use("/api/event", events_routes);
-//server
+
 app.listen(port, () =>
   console.log(`server is running on port http://localhost:${port}`),
 );
